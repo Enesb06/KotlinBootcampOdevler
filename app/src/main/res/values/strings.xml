@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">KotlinBootcampOdevler</string>
+    <string name="app_name">Otelciniz</string>
+    <string name="otelBaslik">Luxury royal room</string>
+    <string name="otelAciklama">Experience a king-like experience in the room designed only for those who want to stay like a king...</string>
+    <string name="birKisi">1 person</string>
+    <string name="ikiKisi">2 person</string>
+    <string name="ucKisi">3 person</string>
+    <string name="fiyat1">£500</string>
+    <string name="Fiyat2">£750</string>
+    <string name="Fiyat3">£1000</string>
+    <string name="geriButon">Bak</string>
+    <string name="SecVeIlerleButon">Choose and next</string>
 </resources>
