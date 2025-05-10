@@ -7,36 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/anaRenk"
-        android:text="£750"
-        android:textColor="#3E2723"
-        app:layout_constraintEnd_toEndOf="@+id/chip2"
-        app:layout_constraintStart_toStartOf="@+id/chip2"
-        app:layout_constraintTop_toBottomOf="@+id/chip2" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/white"
-        android:backgroundTint="@color/anaRenk"
-        android:text="£500"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/chip"
-        app:layout_constraintStart_toStartOf="@+id/chip"
-        app:layout_constraintTop_toBottomOf="@+id/chip" />
-
     <com.google.android.material.chip.Chip
         android:id="@+id/chip3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3 kişi"
+        android:text="@string/ucKisi"
+        android:textColor="@color/white"
         app:chipBackgroundColor="@color/anaRenk"
         app:layout_constraintBottom_toBottomOf="@+id/chip2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +24,8 @@
         android:id="@+id/chip2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2 kişi"
+        android:text="@string/ikiKisi"
+        android:textColor="@color/white"
         app:chipBackgroundColor="@color/anaRenk"
         app:layout_constraintEnd_toStartOf="@+id/chip3"
         app:layout_constraintHorizontal_bias="0.5"
@@ -84,11 +61,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Lüx Kraliyet Odası"
+        android:fontFamily="cursive"
+        android:text="@string/otelBaslik"
         android:textAlignment="center"
         android:textColorLink="@color/yaziRenk2"
-        android:textSize="26dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +76,7 @@
         android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:srcCompat="@drawable/img" />
@@ -107,12 +85,13 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="270dp"
-        android:text="Sadece kral gibi konaklamak isteyenler için tasarlanan odada kral gibi bir deneyim yaşayın..."
+        android:layout_marginTop="320dp"
+        android:text="@string/otelAciklama"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -121,24 +100,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="1 kişi"
+        android:fontFamily="@font/arizonia"
+        android:text="@string/birKisi"
+        android:textColor="@color/white"
         app:chipBackgroundColor="@color/anaRenk"
         app:layout_constraintEnd_toStartOf="@+id/chip2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/anaRenk"
-        android:text="£1000"
-        android:textColor="#3E2723"
-        app:layout_constraintEnd_toEndOf="@+id/chip3"
-        app:layout_constraintStart_toStartOf="@+id/chip3"
-        app:layout_constraintTop_toBottomOf="@+id/chip3" />
 
     <Button
         android:id="@+id/button5"
@@ -147,7 +116,8 @@
         android:layout_marginStart="2dp"
         android:layout_marginBottom="1dp"
         android:backgroundTint="@color/yaziRenk2"
-        android:text="Geri"
+        android:fontFamily="@font/aleo"
+        android:text="@string/geriButon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -158,9 +128,56 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="1dp"
         android:backgroundTint="@color/yaziRenk2"
-        android:text="Seç ve İlerle"
+        android:fontFamily="@font/aleo"
+        android:text="@string/SecVeIlerleButon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/anaRenk"
+        android:text="£500"
+        app:layout_constraintEnd_toEndOf="@+id/chip"
+        app:layout_constraintStart_toStartOf="@+id/chip"
+        app:layout_constraintTop_toBottomOf="@+id/chip" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/anaRenk"
+        android:text="@string/Fiyat2"
+        app:layout_constraintEnd_toEndOf="@+id/chip2"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/chip2"
+        app:layout_constraintTop_toBottomOf="@+id/chip2" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/anaRenk"
+        android:text="@string/Fiyat3"
+        app:layout_constraintEnd_toEndOf="@+id/chip3"
+        app:layout_constraintStart_toStartOf="@+id/chip3"
+        app:layout_constraintTop_toBottomOf="@+id/chip3" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+
+
+        android:rating="4.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

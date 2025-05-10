@@ -8,6 +8,6 @@
     <string name="fiyat1">£500</string>
     <string name="Fiyat2">£750</string>
     <string name="Fiyat3">£1000</string>
-    <string name="geriButon">Bak</string>
+    <string name="geriButon">Back</string>
     <string name="SecVeIlerleButon">Choose and next</string>
 </resources>
